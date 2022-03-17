@@ -1,0 +1,108 @@
+/*Colors used on site
+White
+Green: #28a745
+*/
+
+body{
+  background-color: black;
+  color: white;
+  margin-bottom: 30px;
+}
+.tt{
+  font-size: larger;
+  text-align: center;
+}
+.cent{
+  text-align: center;
+}
+.ll{
+  color: darkgrey;
+
+}
+.mid{
+  margin-left: 170px;
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.step-left{
+  padding-top: 200px;
+
+}
+.ht{
+  overflow: scroll;
+}
+.warning-text{
+  color: red;
+  font-size: 10px;
+}
+.col-md-4{
+  padding:20px;
+}
+.bg-light{
+  background-color: #000000!important
+}
+.navbar-light .navbar-brand{
+  color: #28a745;
+}
+.navbar-light .navbar-brand:hover{
+  color: #28a745;
+}
+.navbar{
+  border-bottom: 1px solid lightgrey;
+
+}
+.navbar-light .navbar-nav .nav-link{
+  color: #28a745;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  color: #28a745!important;
+}
+.big-text{
+  font-size: x-large;
+}
+.green-text{
+  color: #28a745;
+}
+.underlines{
+  text-decoration: underline;
+}
+/*Home Page*/
+.popular-container{
+  text-align: center;
+}
+.pop-links{
+  color: lightgrey;
+  text-decoration: underline;
+}
+.entice-me{
+  color: darkgrey;
+  font-size: small;
+}
+.popular-img{
+  width: 250px;
+  height: 400px;
+  display: block;
+  margin-left: 50px;
+}
+.small-popular-container{
+  text-align: center;
+}
+.home-div-big{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.home-div-desc{
+  margin-bottom: 40px;
+}
+.hold-popular-agents{
+  margin-bottom: 30px;
+}
+
+/*Search Elements*/
+.small-links-container{
+  text-align: center;
+}
+.year-text, .type-text{
+  color: darkgrey;
+}

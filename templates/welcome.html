@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'welcome.js') }}"></script>
+<script>
+        let popular = {{popular|tojson}}
+</script>
+
+
+<div class="row big-text home-div-big">
+  Welcome to <span class="green-text"> &nbsp;Learn Valorant!</span>
+</div>
+<div class="row home-div-desc">
+  This is a website built for gamers who like Valorant and want to learn more about the characters. You can start off by learning about some of our most popular characters first:
+</div>
+<div id="popular-container" class="row hold-popular-agents">
+
+
+</div>
+
+{% endblock %}

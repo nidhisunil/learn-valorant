@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'edit.js') }}"></script>
+<script>
+        let single_data = {{single_data|tojson}}
+        let curr_id = {{curr_id|tojson}}
+</script>
+<div class="row">
+  <div class="col-6">
+    <label for="Agent Name" id="name-labell" >Agent Name </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-agentt" class="ht" placeholder="{{single_data.name}}" > <i class="fa-solid fa-pencil"></i>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <label for="" id="tutorial-labell">Agent tutorial </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-tutoriall" class="ht" placeholder="{{single_data.agent_tutorial}}"><i class="fa-solid fa-pencil"></i>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <label for="" id="trailer-labell">Agent trailer </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-trailerr" placeholder="{{single_data.agent_trailer}}"><i class="fa-solid fa-pencil"></i>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <label for="" id="image-labell">Agent image </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-imagee" placeholder="{{single_data.agent_image}}"><i class="fa-solid fa-pencil"></i>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <label for="" id="desc-labell">Agent description </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-descriptionn" placeholder="{{single_data.description}}"><i class="fa-solid fa-pencil"></i>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <label for="" id="ab1-labell">Agent abilities </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-ab11" placeholder="{{single_data.abilities}}" readonly>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6">
+    <label for="" id="year-labell">Agent year added </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-yrr" placeholder="{{single_data.year_added}}"><i class="fa-solid fa-pencil"></i>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <label for="" id="type-labell">Agent type </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-agtypee" placeholder="{{single_data.agent_type}}"><i class="fa-solid fa-pencil"></i>
+  </div>
+</div>
+<input type="submit" id="edit-submit" name="" value="Edit">
+<button onclick="myFunction()">Discard</button>
+<div id="cancel-popup">
+
+</div>
+
+
+{% endblock %}

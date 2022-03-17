@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'add.js') }}"></script>
+<script>
+
+</script>
+
+<div class="row" id="alert-row">
+
+</div>
+<div class="row">
+  <div class="col-6">
+    <label for="Agent Name" id="name-label">Agent Name </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-agent" >
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <label for="" id="tutorial-label">Agent tutorial </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-tutorial" >
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <label for="" id="trailer-label">Agent trailer </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-trailer" >
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <label for="" id="image-label">Agent image </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-image" >
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <label for="" id="desc-label">Agent description </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-description" >
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <label for="" id="ab1-label">Agent ability 1 </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-ab1" >
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <label for="">Agent ability 2 </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-ab2" >
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <label for="">Agent ability 3 </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-ab3" >
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <label for="">Agent ability 4 </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-ab4" >
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <label for="" id="year-label">Agent year added </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-yr" >
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <label for="" id="type-label">Agent type </label>
+  </div>
+  <div class="col-6">
+    <input type="text" id="input-agtype" >
+  </div>
+</div>
+<div class="col-12">
+
+            <input type="submit" id="post-button" name="" value="Submit">
+
+</div>
+
+{% endblock %}

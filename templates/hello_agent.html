@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'hello_agent.js') }}"></script>
+<script>
+        let single_data = {{single_data|tojson}}
+</script>
+
+<div class="super-block">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row mid">
+  <div class="col-12">
+    <b>{{single_data.name}}</b><br>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <img src="{{single_data.agent_image}}" alt="{{single_data.name}}">
+  </div>
+  <div class="col-6 step-left">
+    <b><a href="/search/{{single_data.agent_type}}" class="green-text tt">{{single_data.agent_type}}</a></b><br>
+    <b >{{single_data.description}}</b><br>
+    <b class="ll">Year Added:&nbsp;<a href="/search/{{single_data.year_added}}" class="green-text">{{single_data.year_added}}</a></b><br>
+    <b class="ll">Abilities: </b><br>
+    <div id="agent-cont">
+
+    </div>
+  </div>
+
+</div>
+<div class="row cent">
+  <div class="col-12">
+    <b class="ll ">Watch the <a href="{{single_data.agent_trailer}}" class="green-text">Agent Trailer</a>!</b><br>
+    <b class="ll ">Learn the Agent using an <a href="{{single_data.agent_tutorial}}" class="green-text">Agent Tutorial</a></b><br>
+      <a href="/edit/{{single_data.id}}" class="edit-enter">Edit this entry</a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+{% endblock %}
